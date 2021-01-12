@@ -1,5 +1,12 @@
+$bg-color: #0D2436; // Page background
+$text-color: #FFFFFF; // Default/normal font color
+$link-hover-color: #CCCCCC; // Hover font color
+$primary: #009B86; // Nominee card / Submit button background / Selected Nominee card
+$primary-hover: #34AC9C; // Nominee card background hover / submit button background hover
+
 $theme-colors: (
-    "primary": #50B074
+    "primary": $primary,
+    "light": $text-color
 );
 
 @import "~bootstrap/scss/functions";

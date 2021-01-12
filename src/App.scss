@@ -2,9 +2,10 @@
 
 .App {
   min-height: 100%;
-  background-color: theme-color("dark");
+  background-color: $bg-color;
 
   .App-body {
     min-height: 400px;
+    padding: 0.5rem 1rem;
   }
 }
