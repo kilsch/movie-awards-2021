@@ -1,12 +1,21 @@
 $bg-color: #0D2436; // Page background
-$text-color: #FFFFFF; // Default/normal font color
+$body-color: #FFFFFF; // Default/normal font color
 $link-hover-color: #CCCCCC; // Hover font color
-$primary: #009B86; // Nominee card / Submit button background / Selected Nominee card
+$btn-link-disabled-color: $link-hover-color;
+$btn-disabled-opacity: 1;
+$primary: #009B86; // Nominee card / Submit button background
+$primary-alt: #099BB3; // Selected Nominee card
 $primary-hover: #34AC9C; // Nominee card background hover / submit button background hover
+$secondary: #fff59e;
+$dark: #0D2436;
+$danger: #dd6f15;
 
 $theme-colors: (
     "primary": $primary,
-    "light": $text-color
+    "light": $body-color,
+    "dark": $dark,
+    "danger": $danger,
+    "success": $primary
 );
 
 @import "~bootstrap/scss/functions";
