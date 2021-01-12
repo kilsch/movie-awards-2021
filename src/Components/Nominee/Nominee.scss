@@ -1,0 +1,52 @@
+@import "../../variables";
+
+.nominee {
+    background-color: $dark;
+    border-radius: .5rem;
+
+    .nominee-title {
+        min-height: 3rem;
+    }
+
+    .nominee-img {
+        // Center
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        // Make a circle
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        // Shadow transition
+        box-shadow: 0;
+        transition: all 0.4s;
+    }
+
+    &.hover {
+        // Nominee card hover
+        background-color: $primary-hover;
+        color: $link-hover-color;
+
+        .nominee-img {
+            // Shadow and movement
+            box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+            margin-left: -4px;
+            margin-right: 4px;
+        }
+    }
+
+    &.is-selected {
+        background-color: $primary-alt !important;
+    }
+
+    &.other-selected.not-selected {
+        opacity: 0.3;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

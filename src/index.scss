@@ -18,3 +18,13 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+.btn {
+    &:hover, &:disabled {
+        color: $link-hover-color;
+    }
+}
+
+.modal-dialog {
+    padding-bottom: 25%;
+}
