@@ -22,7 +22,7 @@ const Ballot = () => {
 
   // Load data on init
   useEffect(() => {
-    fetch('/api/getBallotData')
+    fetch('/api/getBallotData.php')
       .then(res => res.json())
       .then(
         (result) => {
